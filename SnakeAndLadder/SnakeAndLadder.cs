@@ -54,6 +54,10 @@ namespace SnakeAndLadderProgram
                         StartPoint += DiceRolled;
                         Console.WriteLine("Dice Rolls Value : +{0} ", DiceRolled);
                         Console.WriteLine("Got Ladder : " + StartPoint);
+                        if (StartPoint > Winning)
+                        {
+                            StartPoint -= DiceRolled;
+                        }
                         Console.WriteLine("Player Position : " + StartPoint);
                         break;
                         case snake:
@@ -68,7 +72,7 @@ namespace SnakeAndLadderProgram
                         Console.WriteLine("Player Position : " + StartPoint);
                         break;
                 }
-                if(StartPoint >= Winning)
+                if(StartPoint == Winning)
                 {
                     Console.WriteLine("Won");
 
