@@ -3,5 +3,5 @@ using SnakeAndLadderProgram;
 
 Console.WriteLine("Welcome to Snake And Ladder Game");
 SnakeAndLadder snakeAndLadder = new SnakeAndLadder();
-snakeAndLadder.DiceRolled();
+snakeAndLadder.StartGame();
 Console.ReadLine();
